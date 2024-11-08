@@ -11,8 +11,8 @@ phases:
   build:
     commands:
       - echo "Creating zip file for Lambda function"
-      - zip -r lambda_function.zip . # Package your code and dependencies into a zip file
+      - zip -r Tokay_Automate.zip . # Package your code and dependencies into a zip file
 
 artifacts:
   files:
-    - lambda_function.zip # Specify the name of your zip file
+    - Tokay_Automate.zip # Specify the name of your zip file
