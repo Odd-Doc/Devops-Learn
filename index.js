@@ -11,11 +11,11 @@ export const handler = async (event) => {
   return result;
 };
 
-const event = {
-  body: JSON.stringify({
-    inputData: "Hello World, Let's update some stuff",
-  }),
-};
+// const event = {
+//   body: JSON.stringify({
+//     inputData: "Hello World, Let's update some stuff",
+//   }),
+// };
 
-const response = await handler(event);
-console.log(response);
+// const response = await handler(event);
+// console.log(response);
