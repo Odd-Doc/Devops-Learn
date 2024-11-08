@@ -8,7 +8,10 @@ const runIt = async (data) => {
 
 export const handler = async (event) => {
   const result = await runIt(event);
-  return result;
+  return {
+    statusCode: 200,
+    body: JSON.stringify(result),
+  };
 };
 
 // const event = {
