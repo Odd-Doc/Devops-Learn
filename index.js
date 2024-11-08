@@ -2,7 +2,7 @@ const runIt = async (data) => {
   const req = await JSON.parse(data.body);
 
   return {
-    message: req.inputData + ", and make it better!",
+    message: "Let's update this with..." + req.inputData,
   };
 };
 
@@ -13,7 +13,7 @@ export const handler = async (event) => {
 
 // const event = {
 //   body: JSON.stringify({
-//     inputData: "Hello World, Let's update some stuff",
+//     inputData: "an update",
 //   }),
 // };
 
