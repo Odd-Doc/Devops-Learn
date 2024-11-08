@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16 # Example runtime version; adjust as necessary
+    commands:
+      - echo "Installing dependencies"
+      - npm install # or yarn install, if needed
+
+  build:
+    commands:
+      - echo "Creating zip file for Lambda function"
+      - zip -r lambda_function.zip . # Package your code and dependencies into a zip file
+
+artifacts:
+  files:
+    - lambda_function.zip # Specify the name of your zip file
