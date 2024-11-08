@@ -1,0 +1,12 @@
+{
+  "name": "devops-learning",
+  "version": "1.0.0",
+  "description": "Learn how to do a little CICD and shore up some devops knowledge",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
